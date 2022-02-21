@@ -1,4 +1,4 @@
-# AWSPractice
+# Using AWS Glue, S3 and PySpark to implement ETL in AWS
 Practicing ETL implementation using S3, AWS Glue, and Pyspark
 
 ### Step 1: Creating S3 Bucket
