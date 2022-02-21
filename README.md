@@ -1,4 +1,4 @@
-# Using AWS Glue, S3 and PySpark to implement ETL in AWS
+# Using AWS Glue, S3, and PySpark to implement ETL in AWS
 Practicing ETL implementation using S3, AWS Glue, and Pyspark
 
 ### Step 1: Creating S3 Bucket
@@ -37,11 +37,11 @@ Practicing ETL implementation using S3, AWS Glue, and Pyspark
 
 ### Step 6: Overwriting the auto-generated script
 1. Copy and paste the contents of the /PySpark Scripts/GlueScript.py file to the script shown on the screen.
-2. This script is applying a simple transoframtion just for learning and testing purposes, you can write more complex transformations according to your usecase.
+2. This script is applying a simple transformation just for learning and testing purposes, you can write more complex transformations according to your use case.
 3. If you get lost on the page just follow => (select the glue job > actions > edit script)
 4. Click on the save button to save your change in the script.
 5. Click on Run Job.
 
 ## Step 7: Validation and Troubleshooting
-1. Once your Job is run successfully, you will be able to see the partition stored inside your output folder inside your s3 bucket created in the Step 1.
+1. Once your Job is run successfully, you will be able to see the partition stored inside your output folder inside your s3 bucket created in Step 1.
 2. If your job is stuck at some error, please check failure logs (AWS Glue console > select the job > History > ErrorLogs) in AWS CloudWatch.
