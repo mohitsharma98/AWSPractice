@@ -22,6 +22,21 @@ Practicing ETL implementation using S3, AWS Glue and Pyspark
 10. Give you database a name and click next.
 11. Review your choices and click on finish.
 
-### Step 4: Running your Crawler
+### Step 4: Running Glue Crawler
 1. Go to Crawlers in the AWS Glue Console Page and select the crawler you created in Step 3.
 2. Click on Actions and select Run Crawler option.
+
+### Step 5: Creating Glue Job
+1. Once your crawler is ran successfully, you will be able to see the table metadata schema under (Databases > Tables > input)
+2. Now click on Glue job and add job option
+3. Configure Job properties like name, IAM role and under Job Parameters change the worker node to 2, click next.
+4. Choose existing data catalog that we crwaled in Setp 4 as data source, click next.
+5. Choose Transformation as Change Schema (which we will over write with our own use case.)
+6. Choose data target as same input data catalog table we crawled, click next.
+7. Click on save the job and Edit script.
+
+### Step 6: Overwriting the auto generated script
+1. Copy and paste the contents of the /PySpark Scripts/GlueScrpit.py file to the script showing on the screen.
+2. If you get lost on the page just follow => (select the glue job > actions > edit script)
+3. Click on save button to save your change in the script.
+4. Click on Run Job.
